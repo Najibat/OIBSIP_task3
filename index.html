@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="box">
+            <label for="temperature">Temperature</label>
+            <input type="number" id="temperature" name="temperature">
+    </div>
+
+    <div class="box-1">
+        <label for="unit">Unit</label>
+        <select id="unit" class="Temp-unit" name="unit">
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="reverse">Reverse</option>
+        </select>
+    </div>
+
+    <div class="box-2">
+        <label for="celsius"></label>
+        <input type="number" id="celsius" placeholder="Celsius" name="celsius">
+        <span class="icon">&#8451</span>
+    </div>
+
+    <div class="box-4">
+        <label for="kelvin"></label>
+        <input type="number" id="kelvin" placeholder="Kelvin" name="kelvin">
+        <span class="icon">&#8490</span>
+    </div>
+
+    <div class="box-3">
+        <label for="fahrenheit"></label>
+        <input type="number" id="fahrenheit" placeholder="Fahrenheit" name="fahrenheit">
+        <span class="icon">&#8457</span>
+    </div>
+
+
+    <div class="box-5">
+        <label for="reverse"></label>
+        <input type="number" id="reverse" placeholder="From and to Kelvin" name="reverse">
+        <span class="icon">&#8451</span>
+    </div>
+
+    <button type="button"   onclick="convert()" class="button">Convert</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
